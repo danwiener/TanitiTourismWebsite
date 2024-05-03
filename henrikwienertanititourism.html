@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Taniti</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+        }
+        header input[type="search"] {
+            padding: 8px;
+        }
+        #hero {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+        #main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: white;
+        }
+        .column {
+            flex: 1;
+            margin: 10px;
+        }
+        .block {
+            margin-bottom: 20px;
+        }
+        .button {
+            display: block;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background: #f1f1f1;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            padding: 5px 10px;
+            margin: 0 5px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/100x50" alt="Taniti Logo">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#accommodations">Accommodations</a>
+            <a href="#dining">Dining</a>
+            <a href="#activities">Activities</a>
+            <a href="#transportation">Transportation</a>
+            <a href="#book">Book Now</a>
+        </nav>
+        <input type="search" placeholder="Search...">
+    </header>
+    <div id="hero">
+        <h1>Welcome to Taniti!</h1>
+        <p>Explore the beauty of our tropical paradise.</p>
+        <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Learn More</button>
+    </div>
+    <div id="main-content">
+        <div class="column">
+            <div class="block">
+                <h3>Accommodations</h3>
+                <a href="#" class="button">Hotels</a>
+                <a href="#" class="button">Bed & Breakfasts</a>
+                <a href="#" class="button">Private Condos</a>
+            </div>
+            <div class="block">
+                <h3>Dining</h3>
+                <a href="#" class="button">Local</a>
+                <a href="#" class="button">American-Style</a>
+                <a href="#" class="button">Pan-Asian</a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="block">
+                <h3>Activities</h3>
+                <a href="#" class="button">Beaches</a>
+                <a href="#" class="button">Rainforest Adventures</a>
+                <a href="#" class="button">Cultural Tours</a>
+                <a href="#" class="button">Nightlife</a>
+                <a href="#" class="button">Discover More</a>
+            </div>
+            <div class="block">
+                <h3>Transportation</h3>
+                <a href="#" class="button">Airport Transfer</a>
+                <a href="#" class="button">Car Rental</a>
+                <a href="#" class="button">Public Transport</a>
+                <a href="#" class="button">Detailed Schedule & Bookings</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+        <a href="#">Legal Notices</a>
+        <a href="#">Social Media</a>
+    </footer>
+</body>
+</html>
