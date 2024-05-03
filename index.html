@@ -41,11 +41,20 @@
             flex: 1;
             margin: 10px;
         }
+        #hero {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
         .block {
             margin-bottom: 20px;
         }
         .button {
-            display: block;
+            display: flex;
+            align-items: center;
             padding: 10px;
             background: #007bff;
             color: white;
@@ -57,13 +66,17 @@
         .button:hover {
             background-color: #0056b3;
         }
+        .button img {
+            height: 30px;
+            margin-right: 10px;
+        }
         footer {
             background: #f1f1f1;
             text-align: center;
             padding: 10px 0;
             position: fixed;
-            width: 100%;
             bottom: 0;
+            width: 100%;
         }
         footer a {
             padding: 5px 10px;
@@ -90,22 +103,21 @@
         <div class="column">
             <div class="block">
                 <h3>Accommodations</h3>
-                <a href="#" class="button">Hotels</a>
-                <a href="#" class="button">Bed & Breakfasts</a>
-                <a href="#" class="button">Private Condos</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Hotels">Hotels</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Bed & Breakfasts">Bed & Breakfasts</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Private Condos">Private Condos</a>
             </div>
             <div class="block">
                 <h3>Dining</h3>
-                <a href="#" class="button">Local</a>
-                <a href="#" class="button">American-Style</a>
-                <a href="#" class="button">Pan-Asian</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Local">Local</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="American-Style">American-Style</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Pan-Asian">Pan-Asian</a>
             </div>
         </div>
         <div class="center">
             <div id="hero">
                 <h1>Welcome to Taniti!</h1>
                 <p>Explore the beauty of our tropical paradise.</p>
-                <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Learn More</button>
             </div>
             <div class="block" id="about">
                 <h3>About Taniti</h3>
@@ -115,18 +127,18 @@
         <div class="column">
             <div class="block">
                 <h3>Activities</h3>
-                <a href="#" class="button">Beaches</a>
-                <a href="#" class="button">Rainforest Adventures</a>
-                <a href="#" the button">Cultural Tours</a>
-                <a href="#" the button">Nightlife</a>
-                <a href="#" the button">Discover More</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Beaches">Beaches</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Rainforest Adventures">Rainforest Adventures</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Cultural Tours">Cultural Tours</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Nightlife">Nightlife</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Discover More">Discover More</a>
             </div>
             <div class="block">
                 <h3>Transportation</h3>
-                <a href="#" class="button">Airport Transfer</a>
-                <a href="#" class="button">Car Rental</a>
-                <a href="#" class="button">Public Transport</a>
-                <a href="#" the button">Detailed Schedule & Bookings</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Airport Transfer">Airport Transfer</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Car Rental">Car Rental</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Public Transport">Public Transport</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Detailed Schedule & Bookings">Detailed Schedule & Bookings</a>
             </div>
         </div>
     </div>
