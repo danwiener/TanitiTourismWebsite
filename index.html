@@ -31,21 +31,13 @@
         header input[type="search"] {
             padding: 8px;
         }
-        #hero {
-            background-image: url('https://via.placeholder.com/1200x400');
-            background-size: cover;
-            background-position: center;
-            text-align: center;
-            padding: 40px 20px;
-            color: white;
-        }
         #main-content {
             display: flex;
             justify-content: space-around;
             padding: 20px;
             background: white;
         }
-        .column {
+        .column, .center {
             flex: 1;
             margin: 10px;
         }
@@ -94,11 +86,6 @@
         </nav>
         <input type="search" placeholder="Search...">
     </header>
-    <div id="hero">
-        <h1>Welcome to Taniti!</h1>
-        <p>Explore the beauty of our tropical paradise.</p>
-        <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Learn More</button>
-    </div>
     <div id="main-content">
         <div class="column">
             <div class="block">
@@ -114,21 +101,32 @@
                 <a href="#" class="button">Pan-Asian</a>
             </div>
         </div>
+        <div class="center">
+            <div id="hero">
+                <h1>Welcome to Taniti!</h1>
+                <p>Explore the beauty of our tropical paradise.</p>
+                <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});">Learn More</button>
+            </div>
+            <div class="block" id="about">
+                <h3>About Taniti</h3>
+                <p>Taniti is known for its beautiful beaches, lush rainforests, and vibrant culture. Learn more about what makes Taniti a unique destination.</p>
+            </div>
+        </div>
         <div class="column">
             <div class="block">
                 <h3>Activities</h3>
                 <a href="#" class="button">Beaches</a>
                 <a href="#" class="button">Rainforest Adventures</a>
-                <a href="#" class="button">Cultural Tours</a>
-                <a href="#" class="button">Nightlife</a>
-                <a href="#" class="button">Discover More</a>
+                <a href="#" the button">Cultural Tours</a>
+                <a href="#" the button">Nightlife</a>
+                <a href="#" the button">Discover More</a>
             </div>
             <div class="block">
                 <h3>Transportation</h3>
                 <a href="#" class="button">Airport Transfer</a>
                 <a href="#" class="button">Car Rental</a>
                 <a href="#" class="button">Public Transport</a>
-                <a href="#" class="button">Detailed Schedule & Bookings</a>
+                <a href="#" the button">Detailed Schedule & Bookings</a>
             </div>
         </div>
     </div>
