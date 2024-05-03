@@ -37,7 +37,7 @@
             padding: 20px;
             background: white;
         }
-        .column {
+        .column, .center {
             flex: 1;
             margin: 10px;
         }
@@ -70,22 +70,6 @@
         .button:hover {
             background-color: #0056b3;
         }
-        .book-now {
-            padding: 20px;
-            text-align: center;
-            background-color: #007bff;
-            color: white;
-            margin-top: 20px;
-        }
-        .book-now form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .book-now input, .book-now select {
-            padding: 8px;
-            margin: 5px;
-        }
         footer {
             background: #f1f1f1;
             text-align: center;
@@ -99,6 +83,13 @@
             margin: 0 5px;
             color: #333;
             text-decoration: none;
+        }
+        .book-now {
+            padding: 20px;
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -124,8 +115,6 @@
                 <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Private Condos">Private Condos</a>
                 <a href="#" class="button">View More</a>
             </div>
-        </div>
-        <div class="column">
             <div class="block">
                 <h3>Dining</h3>
                 <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Local">Local</a>
@@ -134,7 +123,25 @@
                 <a href="#" class="button">Detailed Listings & Reservations</a>
             </div>
         </div>
+        <div class="center">
+            <div id="hero">
+                <h1>Welcome to Taniti!</h1>
+                <p>Explore the beauty of our tropical paradise.</p>
+            </div>
+            <div class="block" id="about">
+                <h3>About Taniti</h3>
+                <p>Taniti is known for its beautiful beaches, lush rainforests, and vibrant culture. Learn more about what makes Taniti a unique destination.</p>
+            </div>
+        </div>
         <div class="column">
+            <div class="block">
+                <h3>Activities</h3>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Beaches">Beaches</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Rainforest Adventures">Rainforest Adventures</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Cultural Tours">Cultural Tours</a>
+                <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Nightlife">Nightlife</a>
+                <a href="#" class="button">Discover More</a>
+            </div>
             <div class="block">
                 <h3>Transportation</h3>
                 <a href="#" class="button"><img src="https://via.placeholder.com/30x30" alt="Airport Transfer">Airport Transfer</a>
@@ -164,4 +171,5 @@
         <a href="#">Legal Notices</a>
         <a href="#">Social Media</a>
     </footer>
-</
+</body>
+</html>
