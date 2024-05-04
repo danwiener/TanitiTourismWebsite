@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation - Taniti</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure footer sticks to the bottom */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header img {
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        .transportation {
+            padding: 50px 0;
+            text-align: center; /* Center horizontally */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            margin-bottom: 50px; /* Add margin between activities and footer */
+            flex: 1; /* Expand to fill remaining space */
+        }
+
+        .transport-type {
+            width: 300px;
+            margin: 0 auto 30px; /* Center horizontally with 'auto' margin */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .transport-type h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .transport-type p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.jpg" alt="Taniti Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="accommodations.html">Accommodations</a>
+                <a href="dining.html">Dining</a>
+                <a href="activities.html">Activities</a>
+                <a href="transportation.html">Transportation</a>
+                <a href="book.html">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="transportation">
+        <div class="container">
+            <div class="transport-type">
+                <h2>Taxis</h2>
+                <img src="taxi.jpg" alt="Taxis" width="200">
+                <p>Convenient and reliable taxi services are available throughout Taniti. Flag down a taxi or arrange for pick-up at your location.</p>
+            </div>
+            <div class="transport-type">
+                <h2>Car Rentals</h2>
+                <img src="car.jpg" alt="Car Rentals" width="200">
+                <p>Explore Taniti at your own pace by renting a car. Choose from a variety of vehicles to suit your needs and preferences.</p>
+            </div>
+            <div class="transport-type">
+                <h2>Buses</h2>
+                <img src="bus.jpg" alt="Buses" width="200">
+                <p>Public buses provide affordable transportation options for getting around the island. Check the bus schedule for routes and timings.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Social Media</a>
+            </div>
+            <p>&copy; 2024 Taniti Island</p>
+        </div>
+    </footer>
+</body>
+</html>

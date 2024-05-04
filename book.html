@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now - Taniti</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure footer sticks to the bottom */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header img {
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        .booking {
+            padding: 50px 0;
+            text-align: center; /* Center horizontally */
+            flex: 1; /* Expand to fill remaining space */
+        }
+
+        .booking-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-form label {
+            display: inline-block;
+            width: 150px; /* Adjust width for alignment */
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .booking-form input[type="text"],
+        .booking-form input[type="email"],
+        .booking-form input[type="date"] {
+            width: calc(100% - 160px); /* Adjust width for alignment */
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .booking-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.jpg" alt="Taniti Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="accommodations.html">Accommodations</a>
+                <a href="dining.html">Dining</a>
+                <a href="activities.html">Activities</a>
+                <a href="transportation.html">Transportation</a>
+                <a href="book.html">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="booking">
+        <div class="container">
+            <h1>Book Your Stay</h1>
+            <div class="booking-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="check-in">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in" required>
+                    <label for="check-out">Check-out Date:</label>
+                    <input type="date" id="check-out" name="check-out" required>
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Social Media</a>
+            </div>
+            <p>&copy; 2024 Taniti Island</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining - Taniti</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for dining page */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure footer sticks to the bottom */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            display: flex; /* Added */
+            justify-content: space-between; /* Added */
+            align-items: center; /* Added */
+        }
+
+        header img {
+            height: 50px;
+            margin-left: 20px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        .dining {
+            padding: 50px 0;
+            text-align: center; /* Center horizontally */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            margin-bottom: 50px; /* Add margin-bottom to create space between .dining and footer */
+        }
+
+
+        .restaurant-type {
+            width: 300px;
+            margin: 0 auto 30px; /* Center horizontally with 'auto' margin */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .restaurant-type h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .restaurant-type p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed; /* Fixed position */
+            bottom: 0; /* Stick to the bottom */
+        }
+
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.jpg" alt="Taniti Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="accommodations.html">Accommodations</a>
+                <a href="dining.html">Dining</a>
+                <a href="activities.html">Activities</a>
+                <a href="transportation.html">Transportation</a>
+                <a href="book.html">Book Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="dining">
+        <div class="container">
+            <div class="restaurant-type">
+                <h2>Local Dining</h2>
+                <img src="islandfood.jpg" alt="Local Dining" width="200">
+                <p>Experience the authentic flavors of Taniti with our local dining options. Enjoy fresh seafood and traditional dishes made with local ingredients.</p>
+            </div>
+            <div class="restaurant-type">
+                <h2>American-style Dining</h2>
+                <img src="american.jpg" alt="American-style Dining" width="200">
+                <p>Satisfy your cravings with familiar American-style meals. From burgers to steaks, our American-style restaurants offer a taste of home.</p>
+            </div>
+            <div class="restaurant-type">
+                <h2>Pan-Asian Dining</h2>
+                <img src="pan-asian.jpg" alt="Pan-Asian Dining" width="200">
+                <p>Embark on a culinary journey with our Pan-Asian dining options. Indulge in a fusion of flavors from across Asia, including sushi, noodles, and stir-fries.</p>
+            </div>
+            <div class="restaurant-type">
+                <h2>Grocery Stores</h2>
+                <img src="grocery.jpg" alt="Grocery Stores" width="200">
+                <p>Stock up on essentials at Taniti's grocery stores. With two supermarkets, two smaller grocery stores, and one 24-hour convenience store, you'll find everything you need for your stay.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Social Media</a>
+            </div>
+            <p>&copy; 2024 Taniti Island</p>
+        </div>
+    </footer>
+</body>
+</html>

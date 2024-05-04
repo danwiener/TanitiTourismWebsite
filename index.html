@@ -4,186 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Taniti</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body, html {
-            padding: 0;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header img {
-            height: 50px;
-        }
-        header nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            margin-left: 10px;
-        }
-        header input[type="search"] {
-            padding: 8px;
-        }
-        #main-content {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            background: white;
-        }
-        .column, .center {
-            flex: 1;
-            margin: 10px;
-        }
-        #hero {
-            background-image: url('https://via.placeholder.com/1200x400');
-            background-size: cover;
-            background-position: center;
+        /* Additional CSS styling for the about section */
+        .about-section {
+            background-color: #f9f9f9;
+            padding: 30px 20px;
             text-align: center;
-            color: white;
-            padding: 40px 20px;
-            position: relative;
+            border-radius: 10px;
+            margin: 20px auto; /* Center the box horizontally */
+            max-width: 600px; /* Reduced maximum width */
         }
-        #hero::before {
-            content: "All photos sourced from istockphoto.com";
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            z-index: 1;
-        }
-        .block {
+
+        .about-section h2 {
+            font-size: 24px;
+            color: #333;
             margin-bottom: 20px;
         }
-        .button {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            text-align: center;
-            margin-top: 5px;
-            border-radius: 5px;
+
+        .about-section p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-align: left; /* Align text to the left for better readability */
         }
-        .button img {
-            height: 30px;
-            margin-right: 10px;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
+
+        /* Additional CSS styling for the footer */
         footer {
-            background: #f1f1f1;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        footer a {
-            padding: 5px 10px;
-            margin: 0 5px;
-            color: #333;
-            text-decoration: none;
-        }
-        .book-now {
-            padding: 20px;
-            text-align: center;
-            background-color: #007bff;
+            background-color: #333;
             color: white;
-            margin-top: 20px;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed; /* Fixed position to stick to the bottom of the viewport */
+            width: 100%; /* Full width of the viewport */
+            bottom: 0; /* Align to the bottom */
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+
+        /* Adjust hero section padding for larger photo */
+        #hero {
+            padding: 150px 20px; /* Increased padding */
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Taniti Logo">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#accommodations">Accommodations</a>
-            <a href="#dining">Dining</a>
-            <a href="#activities">Activities</a>
-            <a href="#transportation">Transportation</a>
-            <a href="#book">Book Now</a>
-        </nav>
-        <input type="search" placeholder="Search...">
+        <div class="container">
+            <img src="logo.jpg" alt="Taniti Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="accommodations.html">Accommodations</a>
+                <a href="dining.html">Dining</a>
+                <a href="activities.html">Activities</a>
+                <a href="transportation.html">Transportation</a>
+                <a href="book.html">Book Now</a>
+            </nav>
+        </div>
     </header>
-    <div id="main-content">
-        <div class="column">
-            <div class="block">
-                <h3>Accommodations</h3>
-                <a href="#" class="button"><img src="hotel.jpg" alt="Hotels">Hotels</a>
-                <a href="#" class="button"><img src="bb.jpg" alt="Bed & Breakfasts">Bed & Breakfasts</a>
-                <a href="#" class="button"><img src="condo.jpg" alt="Private Condos">Private Condos</a>
-                <a href="#" class="button">View More</a>
-            </div>
-            <div class="block">
-                <h3>Dining</h3>
-                <a href="#" class="button"><img src="islandfood.jpg" alt="Local">Local</a>
-                <a href="#" class="button"><img src="american.jpg" alt="American-Style">American-Style</a>
-                <a href="#" class="button"><img src="pan-asian.jpg" alt="Pan-Asian">Pan-Asian</a>
-                <a href="#" class="button">Detailed Listings & Reservations</a>
-            </div>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome to Taniti!</h1>
+            <p>All photos sourced from pexels.com</p>
         </div>
-        <div class="center">
-            <div id="hero">
-                <h1>Welcome to Taniti!</h1>
-                <p>Explore the beauty of our tropical paradise.</p>
-                <img src="beach-photo.jpg" alt="Taniti Beach">
-            </div>
-            <div class="block" id="about">
-                <h3>About Taniti</h3>
-                <p>Taniti is known for its beautiful beaches, lush rainforests, and vibrant culture. Learn more about what makes Taniti a unique destination.</p>
-            </div>
-        </div>
-        <div class="column">
-            <div class="block">
-                <h3>Activities</h3>
-                <a href="#" class="button"><img src="beaches.jpg" alt="Beaches">Beaches</a>
-                <a href="#" class="button"><img src="rainforest.jpg" alt="Rainforest Adventures">Rainforest Adventures</a>
-                <a href="#" class="button"><img src="culture.jpg" alt="Cultural Tours">Cultural Tours</a>
-                <a href="#" class="button"><img src="nightlife.jpg" alt="Nightlife">Nightlife</a>
-                <a href="#" class="button">Discover More</a>
-            </div>
-            <div class="block">
-                <h3>Transportation</h3>
-                <a href="#" class="button"><img src="airport.jpg" alt="Airport Transfer">Airport Transfer</a>
-                <a href="#" class="button"><img src="car.jpg" alt="Car Rental">Car Rental</a>
-                <a href="#" class="button"><img src="bus.jpg" alt="Public Transport">Public Transport</a>
-                <a href="#" class="button">Detailed Schedule & Bookings</a>
-            </div>
+    </section>
+
+    <div class="about-section">
+        <div class="container">
+            <h2>About Taniti</h2>
+            <p>Taniti is a tropical paradise with beautiful beaches, lush rainforests, and a vibrant culture. Situated in the Pacific Ocean, this idyllic island offers visitors a chance to escape the hustle and bustle of everyday life and immerse themselves in the natural beauty and rich heritage of the region.</p>
+            <p>Discover traditional crafts, sample delicious local cuisine, and experience the warmth and hospitality of the Tanitian people.</p>
         </div>
     </div>
-    <div class="book-now">
-        <h2>Book Your Stay</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="date">
-            <select>
-                <option>Hotels</option>
-                <option>Bed & Breakfasts</option>
-                <option>Private Condos</option>
-            </select>
-            <textarea placeholder="Special Requests"></textarea>
-            <button type="submit">Confirm Booking</button>
-        </form>
-    </div>
+
     <footer>
-        <a href="#">FAQ</a>
-        <a href="#">Contact</a>
-        <a href="#">Legal Notices</a>
-        <a href="#">Social Media</a>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Social Media</a>
+            </div>
+            <p>&copy; 2024 Taniti Island</p>
+        </div>
     </footer>
 </body>
 </html>
