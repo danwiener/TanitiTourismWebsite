@@ -48,6 +48,19 @@
             text-align: center;
             color: white;
             padding: 40px 20px;
+            position: relative;
+        }
+        #hero::before {
+            content: "All photos sourced from istockphoto.com";
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
         }
         .block {
             margin-bottom: 20px;
