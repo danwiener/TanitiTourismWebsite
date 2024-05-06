@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activities - Taniti</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Global Styles */
         body {
@@ -21,17 +22,6 @@
             margin: 0 auto;
         }
 
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 0;
-        }
-
-        header img {
-            height: 50px;
-            margin-left: 20px;
-        }
-
         nav {
             text-align: center;
         }
@@ -47,6 +37,20 @@
             background-color: #0056b3;
         }
 
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center items vertically */
+        }
+
+
+        header img {
+            height: 5vw; /* Use relative units */
+            margin-left: 2vw; /* Use relative units */
+        }
+
         .activities {
             padding: 50px 0;
             text-align: center; /* Center horizontally */
@@ -54,11 +58,11 @@
             flex-wrap: wrap;
             justify-content: center; /* Center horizontally */
             align-items: center; /* Center vertically */
-            margin-bottom: 50px; /* Add margin between activities and footer */
+            margin-bottom: 50px; /* Add margin-bottom to create space between .dining and footer */
         }
 
         .activity {
-            width: 300px;
+            width: 600px;
             margin: 0 auto 30px; /* Center horizontally with 'auto' margin */
             border: 1px solid #ccc;
             border-radius: 10px;
@@ -83,9 +87,10 @@
             text-align: center;
             padding: 20px 0;
             width: 100%;
-            position: fixed;
-            bottom: 0;
+            position: fixed; /* Fixed position */
+            bottom: 0; /* Stick to the bottom */
         }
+
 
         footer a {
             color: white;

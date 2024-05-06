@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Now - Taniti</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Global Styles */
         body {
@@ -25,11 +26,14 @@
             background-color: #007bff;
             color: white;
             padding: 10px 0;
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center items vertically */
         }
 
+
         header img {
-            height: 50px;
-            margin-left: 20px;
+            height: 5vw; /* Use relative units */
+            margin-left: 2vw; /* Use relative units */
         }
 
         nav {
@@ -138,11 +142,19 @@
                     <input type="date" id="check-in" name="check-in" required>
                     <label for="check-out">Check-out Date:</label>
                     <input type="date" id="check-out" name="check-out" required>
+                    <label for="accommodation-type">Accommodation Type:</label>
+                    <select id="accommodation-type" name="accommodation-type" required>
+                        <option value="" disabled selected>Select Accommodation Type</option>
+                        <option value="Hotel">Hotel</option>
+                        <option value="Bed & Breakfast">Bed & Breakfast</option>
+                        <option value="Condo">Condo</option>
+                    </select>
                     <button type="submit">Book Now</button>
                 </form>
             </div>
         </div>
     </section>
+    
 
     <footer>
         <div class="container">

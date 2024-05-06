@@ -6,36 +6,92 @@
     <title>Welcome to Taniti</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Additional CSS styling for the about section */
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+            display: flex; /* Use flexbox */
+            align-items: center; /* Center items vertically */
+        }
+
+
+        header img {
+            height: 5vw; /* Use relative units */
+            margin-left: 2vw; /* Use relative units */
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1vw 1.5vw; /* Use relative units */
+            margin-left: 1vw; /* Use relative units */
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        #hero {
+            background-image: url('beach-photo.jpg');
+            background-size: cover; /* Scale the background image to cover the entire container */
+            background-repeat: no-repeat;
+            background-position: center center; /* Center the background image horizontally and vertically */
+            text-align: center;
+            color: white;
+            padding: 8vw 4vw; /* Use relative units */
+            position: relative;
+        }
+
+        #hero h1 {
+            font-size: 4vw; /* Use relative units */
+            margin-bottom: 2vw; /* Use relative units */
+        }
+
         .about-section {
             background-color: #f9f9f9;
-            padding: 30px 20px;
+            padding: 3vw; /* Use relative units */
             text-align: center;
-            border-radius: 10px;
-            margin: 20px auto; /* Center the box horizontally */
-            max-width: 600px; /* Reduced maximum width */
+            border-radius: 1vw; /* Use relative units */
+            margin: 2vw auto; /* Center the box horizontally */
+            max-width: 90%; /* Use relative units */
         }
 
         .about-section h2 {
-            font-size: 24px;
+            font-size: 2.4vw; /* Use relative units */
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 2vw; /* Use relative units */
         }
 
         .about-section p {
-            font-size: 18px;
+            font-size: 1.8vw; /* Use relative units */
             color: #666;
             line-height: 1.6;
-            margin-bottom: 15px;
+            margin-bottom: 1.5vw; /* Use relative units */
             text-align: left; /* Align text to the left for better readability */
         }
 
-        /* Additional CSS styling for the footer */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 2vw 0; /* Use relative units */
             position: fixed; /* Fixed position to stick to the bottom of the viewport */
             width: 100%; /* Full width of the viewport */
             bottom: 0; /* Align to the bottom */
@@ -44,16 +100,27 @@
         footer a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 1vw; /* Use relative units */
         }
 
         footer p {
-            margin-top: 10px;
+            margin-top: 1vw; /* Use relative units */
         }
 
-        /* Adjust hero section padding for larger photo */
-        #hero {
-            padding: 150px 20px; /* Increased padding */
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header img {
+                margin-left: 1vw; /* Use relative units */
+            }
+
+            nav a {
+                padding: 1vw; /* Use relative units */
+                margin-left: 0.5vw; /* Use relative units */
+            }
         }
     </style>
 </head>
